@@ -4,25 +4,25 @@ count = len
 list1 = [1,2,3,4,5,6,7]
 # print(count(list1))
 
-def run_twice(func, value):
-    return func(func(value))
-def square(value):
-    return value ** 2
-def cube(value):
-    return value ** 3
-
+# def run_twice(func, value):
+#     return func(func(value))
+# def square(value):
+#     return value ** 2
+# def cube(value):
+#     return value ** 3
+#
 # print(run_twice(square, 3))
 # print(run_twice(cube, 3))
-operate = {'U': str.upper,
-           'L': str.lower,
-           'T': str.title
-           }
-text = "hEllOHiE"
-# print(operate['T'](text))
-def hello(name):
-    print("This is the hello function")
-    print("Hi !", name)
-    print("Trying functional referencing")
+# operate = {'U': str.upper,
+#            'L': str.lower,
+#            'T': str.title
+#            }
+# text = "hEllOHiE"
+# # print(operate['T'](text))
+# def hello(name):
+#     print("This is the hello function")
+#     print("Hi !", name)
+#     print("Trying functional referencing")
 # hello("Nithi")
 # x = 10
 # y = x
@@ -32,12 +32,12 @@ def hello(name):
 
 
 
-# def multiply_with_three(num):
-#     return num * 3
-# def multiplier(num):
-#     return multiply_with_three(num)
-# print(multiplier(4))
-# # print(multiplier(5))
+def multiply_with_three(num):
+    return num * 3
+def multiplier(num):
+    return multiply_with_three(num)
+print(multiplier(4))
+# print(multiplier(5))
 
 
 

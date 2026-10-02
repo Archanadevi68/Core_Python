@@ -1,6 +1,6 @@
 # l=[20,19,44,50,60]
 # print(list(map(lambda x:f"{(x*9/5)+32}F",l)))
-
+#
 # l=['Archana','Devi','gunji','arjun','Lucky']
 # print(list(filter(lambda x: x==x.title() ,l)))
 
@@ -9,7 +9,7 @@
 # l=[1,2,3,4,5]
 # res=reduce(lambda x,y:x*y,l)
 # print(res)
-
+#
 # l=[('archana',20),('mahi',21),('arjun',23),('krishna',25)]
 # print(sorted(l,key=lambda x:x[1],reverse=True))
 
@@ -48,7 +48,7 @@
 # l=['sowjanya','devi','cow','to','arjun','krishna']
 # res=map(lambda x: x.upper() if 3<len(x) else x,
 #         filter(lambda x:3<len(x),l))
-# print(reduce(lambda x,y:(x+y),res))
+# print(reduce(lambda x,y:(x+" "+y),res))
 
 
 # from functools import reduce
@@ -110,17 +110,17 @@
 
 # mixed concept
 # Q1.
-def mixed(a,b,op):
-    op={
-        'add':lambda x,y:x+y,
-        'sub':lambda x
-    }
-    return op(a,b)
-print("add",mixed(10,5,lambda x,y:x+y))
-print("sub",mixed(20,10,lambda x,y:x-y))
-print("multiply",mixed(5,5,lambda x,y:x*y))
-
-# Q3.
+# def mixed(a,b,op):
+#     op={
+#         'add':lambda x,y:x+y,
+#         'sub':lambda x
+#     }
+#     return op(a,b)
+# print("add",mixed(10,5,lambda x,y:x+y))
+# print("sub",mixed(20,10,lambda x,y:x-y))
+# print("multiply",mixed(5,5,lambda x,y:x*y))
+#
+# # Q3.
 
 # def greeting(name,prefix='hello',formatter=lambda x:x):
 #     gret=prefix+" "+name
