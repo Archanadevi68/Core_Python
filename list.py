@@ -386,12 +386,28 @@
 #     print("->",s,end=' ')
 #     print()
 
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# m=float("-inf")
+# for i in range(0,len(l)):
+#     if l[i][i]>m:
+#         m=l[i][i]
+# print(m)
 
 
-
-
-
-
+r=int(input())
+l=[]
+for i in range(0,r):
+    l.append(list(map(int,input().split())))
+c=int(input())
+for i in range(0,len(l)):
+    s=0
+    for j in range(0,c+1):
+        s+=l[i][j]
+    print(s)
 
 
 
