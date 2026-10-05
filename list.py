@@ -398,24 +398,211 @@
 # print(m)
 
 
-r=int(input())
-l=[]
-for i in range(0,r):
-    l.append(list(map(int,input().split())))
-c=int(input())
-for i in range(0,len(l)):
-    s=0
-    for j in range(0,c+1):
-        s+=l[i][j]
-    print(s)
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# sp=0
+# ss=0
+# for i in range(0,len(l)):
+#     for j in range(0,len(l)):
+#         if i==j:
+#             sp+=l[i][j]
+#         if i==r-1:
+#             ss+=l[i][j]
+#
+# print(sp,ss)
 
 
 
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=int(input())
+#
+# for
+#
 
 
 
+# def isprime(n):
+#     fc=0
+#     for i in range(1,n+1):
+#         if n%i==0:
+#             fc+=1
+#     if fc==2:
+#         return True
+#     return False
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# for i in range(0,len(l)):
+#     for j in range(0,c):
+#         s=l[i][j]
+#         if isprime(s):
+#             print(s,end='')
+#         print()
 
 
 
+# sum of all elements in the nested list.
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# s=0
+# for i in range(0,len(l)):
+#     for j in range(0,c):
+#         s+=l[i][j]
+# print(s)
 
 
+# first and secod maximum elements in the given nested list.
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# f=float("-inf")
+# s=float("-inf")
+# for i in range(0,len(l)):
+#     for j in range(0,c):
+#         a=l[i][j]
+#         if a>f:
+#             s=f
+#             f=a
+#         elif s<a and f>a:
+#             s=a
+# # print(f,s)
+
+
+
+# write a programe to print the sum of each inner list in the separetly.
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# d=0
+# for i in range(0,len(l)):
+#     for j in range(0,c):
+#         s=l[i][j]
+#         d+=s
+#     print(d)
+
+
+# column wise printing the sum of nested list in the given list.
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# for i in range(0,c):
+#     d = 0
+#     for j in range(0,len(l)):
+#         s=l[j][i]
+#         d+=s
+#     print(d)
+
+
+# sum of primary and seccondary diagonal elements in the nested list.
+
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# f=0
+# s=0
+# for i in range(0,len(l)):
+#     for j in range(0,c):
+#         if i==j:
+#             f+=l[i][j]
+#         if i+j==c-1:
+#             s+=l[i][j]
+# print(f,s)
+
+
+# match question.
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# print("Total Score of each match")
+# for i in range(0,len(l)):
+#     d = 0
+#     for j in range(0,c):
+#         s=l[i][j]
+#         d+=s
+#     print(f"m{i+1} Total ={d}")
+#
+# print("man of the match")
+# for i in range(0,len(l)):
+#     x =0
+#     m=0
+#     for j in range(0,c):
+#         s=l[i][j]
+#         if x<s:
+#             x=s
+#             m=j
+#     print(f"mm {i+1} is p{m+1}")
+
+
+# neighbor elements.
+# r=int(input())
+# l=[]
+# for i in range(0,r):
+#     l.append(list(map(int,input().split())))
+# c=len(l[0])
+# for i in range(0,len(l)):
+#     for j in range(0,c):
+#         print(l[i][j],end='-->')
+#         if i!=0:
+#             print(l[i-1][j],end=' ')
+#         if j!=c-1:
+#             print(l[i-1][j+1],end=' ')
+#         if i!=len(l)-1:
+#             print(l[i+1][j],end=' ')
+#         if j!=0:
+#             print(l[i][j-1],end=' ')
+#         print()
+
+
+
+# bubble sort.
+# l=list(map(int,input().split()))
+# for i in range(0,len(l)):
+#     c=0
+#     for j in range(0,len(l)-i-1):
+#         if l[j]>l[j+1]:
+#             l[j],l[j+1]=l[j+1],l[j]
+#             c+=1
+#     if c==0:
+#         break
+# print(l)
+
+# insection sort.
+# l=list(map(int,input().split(',')))
+# for i in range(1,len(l)):
+#     for j in range(i,0,-1):
+#         if l[j-1]>l[j]:
+#             l[j-1],l[j]=l[j],l[j-1]
+#         else:
+#             break
+# print(l)
+
+# selection sort.
+l=list(map(int,input().split(',')))
+for i in range(0,len(l)-1):
+    k=0
+    for j in range(1,len(l)-i):
+        if l[j]>l[k]:
+            k=j
+            print(l)
+    l[k],l[len(l)-i-1]=l[len(l)-i-1],l[k]
