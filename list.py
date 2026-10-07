@@ -558,21 +558,28 @@
 # r=int(input())
 # l=[]
 # for i in range(0,r):
-#     l.append(list(map(int,input().split())))
+#     l.append(list(map(int,input().split(','))))
 # c=len(l[0])
 # for i in range(0,len(l)):
-#     for j in range(0,c):
-#         print(l[i][j],end='-->')
-#         if i!=0:
-#             print(l[i-1][j],end=' ')
-#         if j!=c-1:
-#             print(l[i-1][j+1],end=' ')
-#         if i!=len(l)-1:
-#             print(l[i+1][j],end=' ')
+#     for j in range(0,len(l[0])):
+#         print(l[i][j],'->',end=' ')
 #         if j!=0:
 #             print(l[i][j-1],end=' ')
+#         if j!=len(l[0])-1:
+#             print(l[i][j+1],end=' ')
+#         if i!=0:
+#             print(l[i-1][j],end=' ')
+#         if i!=len(l)-1:
+#             print(l[i+1][j],end=' ')
+#         if j!=0 and i!=0:
+#             print(l[i-1][j-1],end=' ')
+#         if i!=0 and j!=len(l[0])-1:
+#             print(l[i-1][j+1],end=' ')
+#         if i!=len(l)-1 and j!=0:
+#             print(l[i+1][j-1],end=' ')
+#         if i!=len(l)-1 and j!=len(l[0])-1:
+#             print(l[i+1][j+1],end=' ')
 #         print()
-
 
 
 # bubble sort.
@@ -598,11 +605,11 @@
 # print(l)
 
 # selection sort.
-l=list(map(int,input().split(',')))
-for i in range(0,len(l)-1):
-    k=0
-    for j in range(1,len(l)-i):
-        if l[j]>l[k]:
-            k=j
-            print(l)
-    l[k],l[len(l)-i-1]=l[len(l)-i-1],l[k]
+# l=list(map(int,input().split(',')))
+# for i in range(0,len(l)-1):
+#     k=0
+#     for j in range(1,len(l)-i):
+#         if l[j]>l[k]:
+#             k=j
+#             print(l)
+#     l[k],l[len(l)-i-1]=l[len(l)-i-1],l[k]
