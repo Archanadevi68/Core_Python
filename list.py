@@ -613,3 +613,51 @@
 #             k=j
 #             print(l)
 #     l[k],l[len(l)-i-1]=l[len(l)-i-1],l[k]
+
+
+
+def username(un):
+    c=0
+    for i in range(1,len(un)):
+        if (un[i]>='A' and un[i]<='Z') or (un[i]>='a' and un[i]<='z') or (un[i]>='0' and un[i]<='9') or un[i]=="." or un[i]=="_":
+        # if un[i].isalpha() or un[i].isdigit() or un[i]=="." or un[i]=="_":
+            c+=1
+    if c==len(un)-1 and un[0].isalpha() and un[-1]!="." and un[-1]!="_":
+        return True
+    return False
+def domain(d):
+    c=0
+    for i in range(1,len(d)):
+        if d[i].isalpha() or d[i].isdigit():
+            c+=1
+    if c==len(d)-1 and d[0]=="@":
+        return True
+    return False
+def extension(e):
+    c=0
+    for i in range(1,len(e)):
+        if e[i].isalpha():
+            c+=1
+    if e[0]=="." and c==len(e)-1:
+      return True
+    return False
+s=input()
+s1=s.split("@")
+if len(s1)==2:
+    s2=s1[1]
+    s3=s2.split(".")
+    un=s1[0]
+    if len(s3)==2:
+        d="@"+s3[0]
+        e="."+s3[1]
+        if len(s)>15 and len(s)<=25:
+            if username(un) and domain(d) and extension(e):
+                print("Valid")
+            else:
+                print("Invalid")
+        else:
+            print("Invalid")
+    else:
+        print("Invalid")
+else:
+    print("Invalid")
